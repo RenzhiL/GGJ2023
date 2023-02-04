@@ -1,0 +1,11 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 8: invalid syntax
+    int point = 0
+         ^
+    
+
+Ren'Py Version: Ren'Py 8.0.3.22090809
+Fri Feb  3 23:48:56 2023
