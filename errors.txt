@@ -2,9 +2,7 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 61: expected statement.
-    Shake("off with her head!")
-                               ^
+File "game/script.rpy", line 482: Indentation mismatch.
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Sat Feb  4 01:28:30 2023
+Sat Feb  4 14:03:56 2023

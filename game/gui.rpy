@@ -64,7 +64,7 @@ define gui.name_text_font = "DejaVuSans.ttf"
 define gui.interface_text_font = "DejaVuSans.ttf"
 
 ## The size of normal dialogue text.
-define gui.text_size = 22
+define gui.text_size = 25
 
 ## The size of character names.
 define gui.name_text_size = 30
@@ -80,6 +80,13 @@ define gui.notify_text_size = 16
 
 ## The size of the game's title.
 define gui.title_text_size = 50
+
+## Spacing
+init -2:
+    style nvl_dialogue:
+        line_spacing 10
+    style say_dialogue:
+        line_spacing 10  
 
 
 ## Main and Game Menus #########################################################
