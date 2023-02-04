@@ -53,13 +53,13 @@ label start:
 
     N "I’m such an idiot."
 
-    T"""Don’t say stuff like that to yourself!
-    Why? What happened?"""
+    menu:
+        "Don’t say stuff like that to yourself!":
+            N "Oh, alright, alright. Anyways…"
+            N "I woke up late this morning, right? So I left home in a hurry! But…"
 
-    #1. Oh, alright, alright. Anyways…
-    #2. -moves straight to the next dialogue-
-
-    N "I woke up late this morning, right? So I left home in a hurry! But…"
+        "Why? What happened?":
+            N "I woke up late this morning, right? So I left home in a hurry! But…"
 
     N "I accidentally left my wallet at home! I basically starved for an hour."
 
