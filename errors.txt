@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 60: choice menuitem expects a non-empty block.
-    "Why? What happened?":
-                          ^
+File "game/script.rpy", line 61: expected statement.
+    Shake("off with her head!")
+                               ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Sat Feb  4 00:10:01 2023
+Sat Feb  4 01:28:30 2023

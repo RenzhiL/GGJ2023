@@ -249,13 +249,13 @@ screen quick_menu():
             xalign 0.5
             yalign 1.0
 
-            textbutton _("Back") action Rollback()
+            #textbutton _("Back") action Rollback()
             textbutton _("History") action ShowMenu('history')
-            textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
+            #textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
             textbutton _("Auto") action Preference("auto-forward", "toggle")
-            textbutton _("Save") action ShowMenu('save')
-            textbutton _("Q.Save") action QuickSave()
-            textbutton _("Q.Load") action QuickLoad()
+            #textbutton _("Save") action ShowMenu('save')
+            #textbutton _("Q.Save") action QuickSave()
+            #textbutton _("Q.Load") action QuickLoad()
             textbutton _("Prefs") action ShowMenu('preferences')
 
 
@@ -303,9 +303,9 @@ screen navigation():
 
             textbutton _("History") action ShowMenu("history")
 
-            textbutton _("Save") action ShowMenu("save")
+            #textbutton _("Save") action ShowMenu("save")
 
-        textbutton _("Load") action ShowMenu("load")
+        #textbutton _("Load") action ShowMenu("load")
 
         textbutton _("Preferences") action ShowMenu("preferences")
 
@@ -319,10 +319,10 @@ screen navigation():
 
         textbutton _("About") action ShowMenu("about")
 
-        if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
+        #if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
             ## Help isn't necessary or relevant to mobile devices.
-            textbutton _("Help") action ShowMenu("help")
+        #    textbutton _("Help") action ShowMenu("help")
 
         if renpy.variant("pc"):
 
@@ -412,6 +412,9 @@ style main_menu_version:
 ## The scroll parameter can be None, or one of "viewport" or "vpgrid". When
 ## this screen is intended to be used with one or more children, which are
 ## transcluded (placed) inside it.
+
+init python:
+    _game_menu_screen = "preferences"
 
 screen game_menu(title, scroll=None, yinitial=0.0):
 
@@ -727,12 +730,12 @@ screen preferences():
                         textbutton _("Window") action Preference("display", "window")
                         textbutton _("Fullscreen") action Preference("display", "fullscreen")
 
-                vbox:
-                    style_prefix "check"
-                    label _("Skip")
-                    textbutton _("Unseen Text") action Preference("skip", "toggle")
-                    textbutton _("After Choices") action Preference("after choices", "toggle")
-                    textbutton _("Transitions") action InvertSelected(Preference("transitions", "toggle"))
+                #vbox:
+                #    style_prefix "check"
+                #    label _("Skip")
+                #    textbutton _("Unseen Text") action Preference("skip", "toggle")
+                #    textbutton _("After Choices") action Preference("after choices", "toggle")
+                #    textbutton _("Transitions") action InvertSelected(Preference("transitions", "toggle"))
 
                 ## Additional vboxes of type "radio_pref" or "check_pref" can be
                 ## added here, to add additional creator-defined preferences.
@@ -745,9 +748,9 @@ screen preferences():
 
                 vbox:
 
-                    label _("Text Speed")
+                    #label _("Text Speed")
 
-                    bar value Preference("text speed")
+                    #bar value Preference("text speed")
 
                     label _("Auto-Forward Time")
 
@@ -867,6 +870,8 @@ style slider_vbox:
 ## dialogue history stored in _history_list.
 ##
 ## https://www.renpy.org/doc/html/history.html
+
+define config.rollback_enabled = True
 
 screen history():
 
@@ -1418,8 +1423,8 @@ screen quick_menu():
             xalign 0.5
             yalign 1.0
 
-            textbutton _("Back") action Rollback()
-            textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
+            #textbutton _("Back") action Rollback()
+            #textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
             textbutton _("Auto") action Preference("auto-forward", "toggle")
             textbutton _("Menu") action ShowMenu()
 
