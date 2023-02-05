@@ -4,11 +4,19 @@
 # name of the character.
 
 define N = Character("Noah")
-#image N default = "images\character\"
+image N default = "images/character/nMeh.png"
+image N back = "images/character/nBack.png"
+image N angry = "images/character/Angry.png"
+image N happy = "images/character/nHappy.png"
+image N root = "images/character/nRoots.png"
+image N consumed = "images/character/nConsumed.png"
+image N sad = "images/character/nSad.png"
+image N sadder = "images/character/nSadder.png"
 
 define T = Character("Sap")
 
 define yN = Character("Young Noah")
+image N sad = "images/character/nYoung.png"
 
 image bg dark = "images/background/dark.PNG"
 image bg medium = "images/Background/medium.PNG"
