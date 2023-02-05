@@ -608,8 +608,6 @@ label start:
 
     with fade
 
-
-
 #BAD END: (< 3 points)
     #CUTSCENE: Dream space almost pitch black, N "’s there, roots all over his form, back facing camera
 label bad:
