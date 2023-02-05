@@ -597,10 +597,10 @@ label start:
     #(something that maybe alludes to N " dying)
     #SCENE fades to black
     with fade
-    if p <= 2:
+    if p <= 1:
         jump bad
 
-    elif p > 4:
+    elif p > 2:
         jump good
 
     else:
