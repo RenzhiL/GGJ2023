@@ -50,11 +50,10 @@ define audio.sad = "audio/Cordyceps.wav"
 define audio.angry = "audio/Balanophoraceae.wav"
 define audio.finale = "audio/Piano.wav"
 
-$ p = 0
-
 # The game starts here.
 
 label start:
+    $ p = 0
     play music casual volume 0.4 fadein 1.0
 
     # Show a background. This uses a placeholder by default, but you can
@@ -112,7 +111,7 @@ label start:
 
     menu:
         "Don’t say stuff like that to yourself!":
-            $ p =+ 1
+            $ p += 1
             yN "Oh, {w=0.5} alright, {w=0.5} alright.{w=1} {cps=15}Anyways...{/cps}"
             yN "I woke up late this morning, {w=0.3} right?{w=1} {cps=45}So I left home in a hurry!{/cps}{w=1} {cps=10}But...{/cps}"
 
@@ -213,7 +212,7 @@ label start:
 
     menu:
         "I’m sure he does, Noah.":
-            $ p =+ 1
+            $ p += 1
             N "Right?"
             N "But something just feels, {w=0.5} {i}wrong{/i}."
             N "I don’t know."
@@ -306,7 +305,7 @@ label start:
 
     menu:
         "Perhaps a little, but he’s probably hurting, too.":
-                $ p =+ 1
+                $ p += 1
                 show N annoyed at even_more_lowered
                 N "Okay, {w=0.5} but he never {i}tells{/i} me anything.{w=1} He just, {w=0.5} you know-{w=0.3}{nw}"
                 N "Like, {w=0.5} why didn’t he say something sooner?{w=1} Why did he bottle it up just for it to explode in our faces now?"
@@ -343,7 +342,7 @@ label start:
                     "Give him space, Noah. You’ve always needed it, so why not try and understand him and give him the same courtesy?": #(+0)
                         stop music fadeout 2.0
                         play music angry volume 1.0 fadein 2.0
-                        $ p =- 1
+                        $ p -= 1
                         N "Ha.{w=1} You’re right."
                         N "If anything, {w=0.5}he should apologize to me {i}first{/i}."
                         N "Why should I go out of my way to help him, {w=0.5}if he’s never done anything for me to begin with."
@@ -362,7 +361,7 @@ label start:
         "No, he’s not. He’s done so much for you, and yet you didn’t notice anything wrong until now?":
             stop music fadeout 2.0
             play music angry volume 1.0 fadein 2.0
-            $ p =- 1
+            $ p -= 1
             #CUTSCENE: Edges of screen darken
             show N angry at even_more_lowered
             N "Wow, {w=0.5} Sap, {w=0.5} even {i}you’re{/i} not on my side?"
@@ -386,7 +385,7 @@ label start:
                 "That’s not true":
                     play music angry volume 1.2 fadein 2.0
                     show N angry at even_more_lowered
-                    $ p =+ 1
+                    $ p += 1
                     N "{size=+2}{cps=20}Not you being a {i}fucking{/i} liar too.{/cps}{/size}{w=1}{nw}"
                     N "{size=+2}{cps=20}I see it on your stupid, {w=0.5} pitying face.{w=1} You hate me too.{/cps}{/size}{w=1.4}{nw}"
                     N "{size=+2}{cps=20}But you know what?{/cps}{/size}{w=1.4}{nw}"
@@ -481,7 +480,7 @@ label start:
             show N back at even_more_lowered
 
         "Why are you so upset?":
-            $ p =- 1
+            $ p -= 1
             show N root_annoyed at even_more_lowered
             T "Maybe he just needs more space and time, {w=0.5}Noah."
             T "Isn’t that what they say?"
@@ -510,7 +509,7 @@ label start:
         "(Hug)": #click on Character
             stop music fadeout 2.0
             play music reveal volume 0.6 fadein 5.0
-            $ p =+ 1
+            $ p += 1
             #SCENE Tree spirit hugs Noah
             show N root_sadder at even_more_lowered
             N "*sobbing*{fast}"

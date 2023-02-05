@@ -2,17 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 416: expected end of line
-    stop fadeout 2.0
-                 ^
-
-File "game/script.rpy", line 511: expected end of line
-    stop music fadein 2.0
-               ^
-
-File "game/script.rpy", line 765: play requires a channel
-    play
-        ^
+File "game/script.rpy", line 115: reached end of line when expecting ':'.
+    if p == 1
+             ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Sun Feb  5 12:12:43 2023
+Sun Feb  5 12:37:14 2023
