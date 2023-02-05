@@ -454,10 +454,10 @@ label start:
             N "{size=+2}Stop, {w=0.5}please.{w=2}{nw}{/size}"
             N "{sc=1}I don’t want your comfort.{w=1} I don’t want your anything.{w=2}{nw}{/sc}{w=2}{nw}"
             N "{sc=2}{cps=45}{size=+4}I lost him!{w=1} I have nothing except for him!{/size}{/cps}{/sc}{w=2}{nw}"
-            N "{sc=1}{size=+1}No friends.{w=1} No home.{w=1} No family.{w=1} No nothing.{w=1}{/size}{/sc} {sc=2}Ezra was my {i}everything{/i}{/sc}.{w=2}{nw}"
+            N "{sc=1}{size=+1}No friends.{w=1} No home.{w=1} No family.{w=1} No nothing.{w=1}{/size}{/sc} \n{sc=2}Ezra was my {i}everything{/i}{/sc}.{w=2}{nw}"
             show N root_angry at even_more_lowered
             N "{sc=0.5}{size=+2}{i}Weren’t you supposed to be my \"guardian angel\"?{w=1}\n
-            Weren’t you supposed to protect me from all this happening?{/i}{/size}{/sc}{w=2}{nw}"
+            Weren’t you supposed to protect me from \nall this happening?{/i}{/size}{/sc}{w=2}{nw}"
             #SCENE Sad N " (hopeless)
             show N root_sadder at even_more_lowered
             N "{sc=0.25}{size=-1}Weren’t you supposed to make me better?{/size}{/sc}{w=2}{nw}"
@@ -465,7 +465,7 @@ label start:
             T "{cps=10}Noah–{w=0.6}{nw}{/cps}"
             #SCENE Angry Human
             show N root_angry at even_more_lowered
-            N "{size=+2}So tell me, {w=0.5}{/size} {sc=0.5}{size=+2}why the {i}fuck{/i} are things the way they are?{/size}{/sc}{w=2}{nw}"
+            N "{size=+2}So tell me, {w=0.5}{/size} {sc=0.5}{size=+2}why the {i}fuck{/i} are things \nthe way they are?{/size}{/sc}{w=2}{nw}"
             N "{sc=0.5}{size=+2}Why can’t you do anything right?{/size}{/sc}{w=3}{nw}"
             N "{sc=2}{size=+5}{cps=20}YOU WERE SUPPOSED TO {i}FIX{/i} ME.{/cps}{/size}{/sc}{w=2}{nw}"
             N "{sc=2}{size=+5}{cps=20}THIS IS {i}YOUR{/i} FAULT.{/cps}{/size}{/sc}{w=2}{nw}"
