@@ -57,6 +57,7 @@ label start:
 
     menu:
         "Don’t say stuff like that to yourself!":
+            $ p =+ 1
             yN "Oh,{w=0.5} alright,{w=0.5} alright.{w=1} {cps=15}Anyways...{/cps}"
             yN "I woke up late this morning,{w=0.3} right?{w=1} {cps=45}So I left home in a hurry!{/cps}{w=1} {cps=10}But...{/cps}"
 
@@ -141,6 +142,7 @@ label start:
 
     menu:
         "I’m sure he does, Noah.":
+            $ p =+ 1
             N "Right?"
             N "But something just feels,{w=0.5} {b}wrong{/b}."
             N "I don’t know."
@@ -216,6 +218,7 @@ label start:
 
     menu:
         "Perhaps a little, but he’s probably hurting, too.":
+                $ p =+ 1
                 N "Okay,{w=0.5} but he never {b}tells{/b} me anything.{w=1} He just,{w=0.5} you know-{w=0.3}{nw}"
                 N "Like,{w=0.5} why didn’t he say something sooner?{w=1} Why did he bottle it up just for it to explode in our faces now?"
                 "{cps=2}...{/cps}"
@@ -243,6 +246,7 @@ label start:
                         #CUTSCENE: Branches crowd screen more, everything darkens abruptly.
 
                     "Give him space, Noah. You’ve always needed it, so why not try and understand him and give him the same courtesy?": #(+0)
+                        $ p =- 1
                         N "Ha.{w=1} You’re right."
                         N "If anything,{w=0.5}he should apologize to me {b}first{/b}."
                         N "Why should I go out of my way to help him,{w=0.5}if he’s never done anything for me to begin with."
@@ -257,6 +261,7 @@ label start:
                         #CUTSCENE: Branches crowd screen more, everything darkens abruptly.
 
         "No, he’s not. He’s done so much for you, and yet you didn’t notice anything wrong until now?":
+            $ p =- 1
             #CUTSCENE: Edges of screen darken
             N "Wow,{w=0.5} Sap,{w=0.5} even {b}you’re{/b} not on my side?"
             N "God,{w=0.5} first I lost my best friend{w=0.5} and now I’m going to lose you too?"
@@ -274,7 +279,8 @@ label start:
             N "{cps=15}I{w=0.5} {b}am{/b}{w=0.5} the{w=0.5} problem.{/cps}{w=1}{nw}"
 
             menu:
-                "That’s not true": #(+0)
+                "That’s not true":
+                    $ p =+ 1
                     N "{size=+2}{cps=20}Not you being a {b}fucking{/b} liar too.{/size}{w=1}{nw}"
                     N "{size=+2}{cps=20}I see it on your stupid,{w=0.5} pitying face.{w=1} You hate me too.{/size}{w=1.4}{nw}"
                     N "{size=+2}{cps=20}But you know what?{/size}{w=1.4}{nw}"
@@ -284,7 +290,7 @@ label start:
                     N "I hate it all."
                     #CUTSCENE: Branches crowd screen more, everything darkens abruptly.
 
-                "Noah, stop. You’re jumping to conclusions.": #(-1)
+                "Noah, stop. You’re jumping to conclusions.":
                     N "{size=+2}No,{w=0.5} I’m not.{w=2}{nw}{/size}"
                     N "{cps=20}It’s true,{w=0.5} right?{w=1.4}{nw}{/cps}"
                     N "{cps=20}He’s not going through tough things in life,{w=1} he’s going through {b}me{/b}.{w=2}{nw}{/cps}"
@@ -303,86 +309,89 @@ label start:
 
     "{cps=2}...{/cps}"
 
-    T "Noah?{w=1.4}{nw}"
+    T "Noah?{w=1}{nw}"
 
     "{cps=2}...{/cps}"
 
-    T "Noah?{w=1.4}{nw}"
+    T "Noah?{w=1}{nw}"
 
     "{cps=2}...{/cps}"
 
-    T "{cps=5}N–{w=1}{nw}{/cps}"
+    T "{cps=5}N–{w=0.6}{nw}{/cps}"
 
-    N "{cps=10}{size=-2}He doesn’t{/cps}{cps=1}...{/cps}{w=1} {cps=10}He wouldn’t{/cps}{cps=1}...{/size}{/cps}{w=2}{nw}"
+    N "{cps=10}{size=-2}He doesn’t{/cps}{cps=2}...{/cps}{w=1}{/size} {size=-2}{cps=10}He wouldn’t{/cps}{cps=2}...{/size}{/cps}{w=2}{nw}"
 
-    N "He wouldn’t even talk to me.{w=1} I saw the look on his face... He wouldn’t even look me in the eyes..."
+    N "{cps=15}He wouldn’t even talk to me.{w=1} I saw the look on his face{/cps}{cps=2}...{/cps} {cps=15}He wouldn’t even look me in the eyes{/cps}{cps=2}...{/cps}{w=2}{nw}"
 
     menu:
         "Oh, Noah...":
             #SCENE Angry Noah
-            N "Just {sz+=5}STOP{/sz}."
-            N "Stop with the pity.{w=1} Stop,{w=0.5}please."
-            N "I don’t want your comfort.{w=1} I don’t want your anything."
-            N " +=5}I lost him! I have nothing except for him! }"
-            N "No friends.{w=1} No home.{w=1} No family.{w=1} No nothing.{w=1} Ezra was my *everything.*"
-            N " And weren’t you supposed to be my 'guardian angel'? Weren’t you supposed to protect me from all this happening?"
+            N "Just{w=0.8} {size=+4}{b}STOP{/b}{/sz}."
+            N "{size=+4}Stop with the pity.{/size}{w=2}{nw}"
+            N "{size=+2}Stop, {w=0.5}please.{w=2}{nw}{/size}"
+            N "{sc=1}I don’t want your comfort.{w=1} I don’t want your anything.{w=2}{nw}{/sc}{w=2}{nw}"
+            N "{sc=2}{cps=45}{size=+4}I lost him!{w=1} I have nothing except for him!{/size}{/cps}{/sc}{w=2}{nw}"
+            N "{sc=1}{size=+1}No friends.{w=1} No home.{w=1} No family.{w=1} No nothing.{w=1}{/size}{/sc} {sc=2}Ezra was my {b}everything{/b}{/sc}.{w=2}{nw}"
+            N "{sc=0.5}{size=+2}{b}Weren’t you supposed to be my \"guardian angel\"?{w=1}\n
+            Weren’t you supposed to protect me from all this happening?{/b}{/sc}{w=2}{nw}"
             #SCENE Sad N " (hopeless)
-            N " -=5}Weren’t you supposed to make me better? }"
+            N "{sc=0.25}{size=-1}Weren’t you supposed to make me better?{/size}{/sc}{w=2}{nw}"
             N "{cps=2}...{/cps}"
-            T "{cps=10}Noah–{nw}{/cps}"
+            T "{cps=10}Noah–{w=0.6}{nw}{/cps}"
             #SCENE Angry Human
-            N "So tell me,{w=0.5}why the *fuck* are things the way they are?"
-            N "Why can’t you do anything right?"
-            N "{cps=2}...{/cps}"
-            N "{sc=2}{size=+5}{cps=20}YOU WERE SUPPOSED TO {b}FIX{/b} ME.{/cps} {/size}{/sc}"
-            N "{sc=2}{size=+5}{cps=20}THIS IS {b}YOUR{b} FAULT.{/cps} }{/sc}"
-            N "This is {b}all{/b} your fault."
-            N "You’re useless.{w=1} You’re worse than useless."
-            N "{size=-2}{cps=20}If I didn’t listen to you{/cps}{cps=1}...{/cps}{/size}{w=2}{nw}"
-            N "{size=-2}{cps=20}If only I didn’t try like you told me to{/cps}{cps=1}...{/cps}{/size}"
-            N "Then none of this would have happened."
-            N "I wish I had never met you."
+            N "{size=+2}So tell me,{w=0.5}{/size} {sc=0.5}{size=+2}why the {b}fuck{/b} are things the way they are?{/size}{/sc}{w=2}{nw}"
+            N "{sc=0.5}{size=+2}Why can’t you do anything right?{/size}{/sc}{w=3}{nw}"
+            N "{sc=2}{size=+5}{cps=20}YOU WERE SUPPOSED TO {b}FIX{/b} ME.{/cps}{/size}{/sc}{w=2}{nw}"
+            N "{sc=2}{size=+5}{cps=20}THIS IS {b}YOUR{b} FAULT.{/cps}{/sc}{w=2}{nw}"
+            N "{sc=0.25}{size=+2}This is all {b}your{/b} fault.{/size}{/sc}{w=2}{nw}"
+            N "{size=+2}You’re useless.{w=1} You’re worse than useless.{/size}{w=2}{nw}"
+            N "{sc=0.5}{cps=20}If I didn’t listen to you{/cps}{cps=1}...{/cps}{/sc}{w=2}{nw}"
+            N "{sc}{size=-2}{cps=20}If only I didn’t try like you told me to{/cps}{cps=1}...{/cps}{/size}{/sc}{w=2}{nw}"
+            N "Then none of this would have happened.{w=2}{nw}"
+            N "I wish I had never met you.{w=2}{nw}"
             N "So leave."
             T "{cps=20}Noah-{w=1}{nw}{/cps}"
-            N "Leave."
-            N "Please."
+            N "Leave.{w=1}{nw}"
+            N "{sc=0.5}Please.{/sc}{w=1}{nw}"
             #SCENE Noah has his back turned to you
 
         "Why are you so upset?":
+            $ p =- 1
             T "Maybe he just needs more space and time,{w=0.5}Noah."
             T "Isn’t that what they say?"
             T "{cps=10}Time–{nw}{/cps}"
             #SCENE Angry N "
-            N "{sc=1}{b}Time heals all wounds?{/b}{/sc}"
-            N "I’m sick of your nonsense."
-            N "And did you say I’m {b}upset{/b}?"
-            N "That doesn’t even {b}begin{/b} to capture how I feel."
-            N "How I feel,{w=0.5}because of {b}you{/b}."
-            N """{sc=1}I’m fucking done.{w=1} I’m going to fuck up everything anyways,
-            {w=0.5}so why even try and salvage this?{/sc}"""
-            N "Why even try and fix a lost cause,{w=0.5}when this is all that I am?"
-            N "And all that I will be?"
-            N "So fuck you."
-            N "I give up."
-            N "And you should have given up on me,{w=0.5}too.{w=1} A long,{w=0.5}long time ago."
+            N "{sc=1}{size=+4}{b}Time heals all wounds?{/b}{/size}{/sc}{w=2}{nw}"
+            N "{size=+2}I’m sick of your nonsense.{/size}{w=2}{nw}"
+            N "{size=+2}And did you say I’m {b}upset{/b}?{/size}{w=2}{nw}"
+            N "{size=+2}That doesn’t even {b}begin{/b} to capture how I feel.{/size}{w=2}{nw}"
+            N "{size=+2}How I feel,{w=0.5}because of {b}you{/b}.{/size}{w=2}{nw}"
+            N """{sc=0.5}{size=+2}I’m fucking done.{w=1} I’m going to fuck up everything anyways,
+            {w=0.5}so why even try and salvage this?{/size}{/sc}{w=2}{nw}"""
+            N "{sc=0.5}{size=+2}Why even try and fix a lost cause,{w=0.5}when this is all that I am?{/size}{/sc}{w=2}{nw}"
+            N "{sc=0.5}{size=+2}And all that I will be?{/size}{/sc}{w=2}{nw}"
+            N "{size=+2}So fuck you.{/size}{w=2}{nw}"
+            N "{size=+2}I give up.{/size}{w=2}{nw}"
+            N "{size=+2}And you should have given up on me,{w=0.5}too.{w=1}\n
+            A long,{w=0.5}long time ago.{/size}"
             #SCENE N " has his back turned on you
 
         "(Hug)": #click on Character
-            #$ p = p + 1
+            $ p =+ 1
             #SCENE Tree spirit hugs Noah
-            N "*sobbing*"
+            N "*sobbing*{fast}"
             T "Everything is going to be alright."
-            N " +=5}No it’s not! {w=1} I hurt him! {w=1} I WANTED to hurt him! }"
+            N " {cps=45}{size=+4}No it’s not! {w=1} I hurt him! {w=1} I WANTED to hurt him!{/size}{/cps}"
             T "Maybe you’re right.{w=1} Maybe Ezra will hate you for the rest of your life."
-            T """The pain you feel might overwhelm you.{w=1} It consumes a part of you.
+            T """The pain you feel might overwhelm you.{w=1} It consumes a part of you.\n
             Perhaps,{w=0.5}Ezra was a part of you that ripped away."""
             N "{cps=2}...{/cps}"
             T "But what’s important to you? {w=1} Is Ezra really THAT important to you?"
             N "{cps=2}...{/cps}"
             T """Be courageous,{w=0.5}my little hero.{w=1} Find the part of you that
             bravely faces rejection and scorn.{w=1} Find the part of you that seeks love."""
-            N "{cps=2}...{/cps}"
-            N "... and then?"
+            "{cps=2}...{/cps}"
+            N "{size=-2}{cps=2}...{/cps} and then?{/size}"
             T "Simple.{w=1} Go and apologize."
 
 #SCENE 5:
@@ -405,27 +414,27 @@ label start:
         "{cps=2}...{/cps}":
             N "I said,{w=0.5}“I can’t live without him."
 
-    N "And you know,{w=0.5}now that I’m living it,{w=0.5}that statement is still true."
+    N "{cps=20}And you know,{w=0.5}now that I’m living it,{w=0.5}that statement is still true.{/cps}{w=2}{nw}"
 
-    N "It’s so dark.{w=1} It feels so meaningless.{w=1} It’s so empty."
+    N "{cps=20}It’s so dark.{w=1} It feels so meaningless.{w=1} It’s so empty.{/cps}{w=2}{nw}"
 
-    N "He was my light,{w=0.5}Sap.{w=1} My *sun.*"
+    N "{cps=20}He was my light,{w=0.5}Sap.{w=1} My {b}sun{/b}.{/cps}{w=2}{nw}"
 
-    N "And just like how you need the sun’s warmth to grow,{w=0.5}I needed his warmth to find any value in this..."
+    N "{cps=20}And just like how you need the sun’s warmth to grow,{w=0.5} I needed his warmth to find any value in this{/cps}{cps=2}...{/cps}{w=2}{nw}"
 
-    N "To find any value in this shitty,{w=0.5}awful life."
+    N "{cps=20}To find any value in this shitty,{w=0.5} awful life.{/cps}{w=2}{nw}"
 
-    N "I lost him,{w=0.5}Sap."
+    N "{cps=20}I lost him,{w=0.5} Sap.{/cps}{w=2}{nw}"
 
-    N "He left me.{w=1} He *abandoned* me."
+    N "{cps=20}He left me.{w=1} He {b}abandoned{/b} me.{/cps}{w=2}{nw}"
 
-    N "He hates me.{w=1} *Life* hates me."
+    N "{cps=20}He hates me.{w=1} {b}Life{/b} hates me.{/cps}{w=2}{nw}"
 
-    N "It’s not fair."
+    N "{cps=20}{sc=0.5}{size=-1}It’s not fair{/size}.{/sc}{/cps}{w=2}{nw}"
 
-    N "*None* of this is fair."
+    N "{sc=0.5}{cps=20}{b}None{/b} of this is fair.{/cps}{/sc}{w=2}{nw}"
 
-    N "So I give up,{w=0.5}okay?"
+    N "{cps=20}So I give up,{w=0.5}okay?{/cps}"
 
     N "I.{w=1} Give.{w=1} Up."
     #CUTSCENE: Human disappears
@@ -471,27 +480,27 @@ label bad:
 
     T "Noah?"
 
-    N "{cps=2}...{/cps}"
+    N "{cps=2}...{/cps}{w=1}{nw}"
 
-    N "Wanna know something ironic,{w=0.5} though?"
+    N "{cps=20}Wanna know something ironic,{w=0.5} though?{/cps}"
 
-    N "Remember a long time ago I told you about haustoria?{w=1} Those parasitic plants?"
+    N "{cps=20}Remember a long time ago I told you about haustoria?{w=1} Those parasitic plants?{/cps}{w=2}{nw}"
 
-    N "Maybe that’s what everything was."
+    N "{cps=20}Maybe that’s what everything was.{/cps}{w=2}{nw}"
 
-    N "I’m the plant,{w=0.5} trying my best to live in this shitty world and all the bad was just the roots strangling me and wringing me dry."
+    N "{cps=20}I’m the plant,{w=0.5} trying my best to live in this shitty world and all the bad was just the roots strangling me and wringing me dry.{/cps}{w=2}{nw}"
 
-    N "Maybe that’s why I found them so fascinating."
+    N "{cps=20}Maybe that’s why I found them so fascinating.{/cps}{w=2}{nw}"
 
-    N "Because they’re a reflection of this life of mine."
+    N "{cps=20}Because they’re a reflection of this life of mine.{/cps}{w=2}{nw}"
 
-    N "{cps=2}...{/cps}"
+    N "{cps=2}...{/cps}{w=1}{nw}"
 
-    N "This shitty, unfair, ruined world.{w=1} And to that, you know what I’ll say?"
+    N "{cps=20}This shitty, unfair, ruined world.{w=1} And to that, you know what I’ll say?{/cps}{w=2}{nw}"
 
-    N "Good riddance"
+    N "{cps=20}Good riddance{/cps}{w=2}{nw}"
 
-    N "Because these dumb roots may have won against me,{w=0.5} but in my own defeat I will drag it down with me,{w=0.5} too."
+    N "{cps=20}Because these dumb roots may have won against me,{w=0.5} but in my own defeat I will drag it down with me,{w=0.5} too.{/cps}"
 
     #scene be with fade
     #CUTSCENE: Dead tree, smashed photo with word “end.” on top
@@ -512,64 +521,63 @@ label meh:
 
     "{cps=2}...{/cps}"
 
-    N "Sap I’m sorry."
+    N "{cps=20}Sap I’m sorry."
 
     T "Sorry about what?"
 
-    N "{cps=10}For{/cps}{cps=5}...{/cps} this."
+    N "{cps=10}For{/cps}{cps=5}...{/cps} this.{w=2}{nw}"
 
-    N "I just got angry.{w=1} And I couldn’t take it anymore,{w=0.5}okay?"
+    N "{cps=20}I just got angry.{w=1} And I couldn’t take it anymore.{/cps}{w=2}{nw}"
 
-    N "I tried my best but I can’t escape it."
+    N "{cps=20}I tried my best but I can’t escape it.{/cps}{w=2}{nw}"
 
-    T "Escape what?"
+    T "{cps=20}Escape what?{/cps}{w=2}{nw}"
 
-    N "I can’t escape my past,{w=0.5}okay?" #(my past)
+    N "{cps=20}I can’t escape my past.{/cps}{w=2}{nw}"
 
-    N "Just like how you’re just a stupid tree rooted in a pot of rotting soil,{w=0.5}I’m a stupid human rooted down by my–"
+    N "{cps=20}Just like how you’re just a stupid tree rooted in a pot of rotting soil,{w=0.5}I’m a stupid human rooted down by my–{/cps}{w=2}{nw}"
 
-    N "By my–{nw}"
+    N "{cps=20}By my–{nw}{/cps}{w=2}{nw}"
 
     #SCENE Confused Human
 
-    N "What was so wrong about my life?"
+    N "{cps=20}What was so wrong about my life?{w=2}{nw}"
 
-    N """Was it my awful parents and a home that didn’t quite ever feel like it?
-    Or was it me and these emotions that ran too deep that eventually
-    I absorbed and drowned in all the poison around me?"""
+    N """{sc=0.5}{cps=20}Was it my awful parents and a home that didn’t quite ever feel like it? \n
+    Or was it me and these emotions that ran too deep that eventually \n
+    I absorbed and drowned in all the poison around me?{/cps}{w=2}{nw}{/sc}"""
 
-    N "What was I tied down by?"
+    N "{cps=20}What was I tied down by?{/cps}"
 
-    T "Nothing,{w=0.5}Noah.{w=1} *Nothing.*"
+    menu:
+        "Nothing, Noah. {b}Nothing{/b}":
+            T "We’re not the same Noah."
 
-    T "We’re not the same Noah."
-
-    #Choice
     menu:
         "Why didn’t you try harder? Why did you give up?":
-            N "Because *nobody* cared.{w=1} I was trying so hard and for *what*?"
-            N "Tell me,{w=0.5}Sap."
-            N "{b}What did I live for?{/b}"
-            N "For the sake of surviving?"
-            N "That’s not living,{w=0.5}Sap."
-            N "That’s hell."
-            N "At least I’ll  be free of it now.{w=1} Even if I have to put everyone around me through it."
-            N "And,{w=0.5}hey,{w=0.5}at least Ez will be free of the burden of me.{w=1} It was for the best,{w=0.5}anyways."
+            N "{cps=20}Because *nobody* cared.{w=1} I was trying so hard and for *what*?{/cps}{w=2}{nw}"
+            N "{cps=20}Tell me,{w=0.5}Sap.{/cps}{w=2}{nw}"
+            N "{cps=20}{b}What did I live for?{/b}{/cps}{w=2}{nw}"
+            N "{cps=20}For the sake of surviving?{/cps}{w=2}{nw}"
+            N "{cps=20}That’s not living,{w=0.5}Sap.{/cps}{w=2}{nw}"
+            N "{cps=20}That’s hell.{/cps}{w=2}{nw}"
+            N "{cps=20}At least I’ll  be free of it now.{w=1} Even if I have to put everyone around me through it.{/cps}{w=2}{nw}"
+            N "{cps=20}And,{w=0.5}hey,{w=0.5}at least Ez will be free of the burden of me.{w=1} It was for the best,{w=0.5}anyways.{/cps}"
 
         "But it’ll be okay.":
-            N "Right."
-            N "It’ll be okay.{w=1} It’s always been like that."
-            N "And Ez will be okay,{w=0.5}too.{w=1} He’ll be better,{w=0.5}right,{w=0.5}Sap?"
-            N "Can you visit him,{w=0.5}too? Can you see how he’s doing? Is he doing okay?"
-            N "I mean,{w=0.5}I’m no longer weighing him down with my needless emotions and burdens and traumas."
-            N "Ez no longer has to be Atlas,{w=0.5}holding up the weight of my world,{w=0.5}right?"
+            N "Right.{w=1}{nw}"
+            N "{cps=20}It’ll be okay.{w=1} It’s always been like that.{/cps}{w=2}{nw}"
+            N "{cps=20}And Ez will be okay,{w=0.5}too.{w=1} He’ll be better,{w=0.5}right,{w=0.5}Sap?{/cps}{w=2}{nw}"
+            N "{cps=20}Can you visit him,{w=0.5}too? Can you see how he’s doing? Is he doing okay?{/cps}{w=2}{nw}"
+            N "{cps=20}I mean,{w=0.5}I’m no longer weighing him down with my needless emotions and burdens and traumas.{/cps}{w=2}{nw}"
+            N "{cps=20}Ez no longer has to be Atlas,{w=0.5}holding up the weight of my world,{w=0.5}right?{/cps}"
             T "Ez is doing –"
-            N "Wait,{w=0.5}don’t finish that sentence."
-            N "I don’t want to know."
-            N "{cps=10}It doesn’t...{/cps} make a difference to me anymore."
-            N "But I hope he’s happy.{w=1} That’s all I have ever wanted."
-            N "Because that’s all I need so that things can be okay."
-            N "And things are,{w=0.5}or at least will be,{w=0.5}okay."
+            N "{cps=20}Wait,{w=0.5}don’t finish that sentence.{/cps}{w=2}{nw}"
+            N "{cps=20}I don’t want to know.{/cps}{w=2}{nw}"
+            N "{cps=10}It doesn’t...{/cps} make a difference to me anymore.{/cps}{w=2}{nw}"
+            N "{cps=20}But I hope he’s happy.{w=1} That’s all I have ever wanted.{/cps}{w=2}{nw}"
+            N "{cps=20}Because that’s all I need so that things can be okay.{/cps}{w=2}{nw}"
+            N "{cps=20}And things are,{w=0.5} or at least will be,{w=0.5} okay.{/cps}"
     return
 
 #GOOD END:
@@ -579,42 +587,42 @@ label good:
 
     T "Noah!"
 
-    N "Sap,{w=0.5}I miss him."
+    N "{size=-1}Sap,{w=0.5}I miss him.{/size}{w=2}{nw}"
 
-    N "I miss Ezra."
+    N "{size=-2}I miss Ezra.{/size}{w=2}{nw}"
 
     #SCENE: Crying Human
 
-    N "I–"
+    N "{cps=20}I–{/cps}{w=2}{nw}"
 
-    N "God,{w=0.5}I hate this."
+    N "{cps=20}God,{w=0.5}I hate this.{/cps}{w=2}{nw}"
 
-    N "Why,{w=0.5}Sap,{w=0.5}*why*?"
+    N "{cps=20}Why,{w=0.5}Sap,{w=0.5}{b}why{/b}?{/cps}"
 
-    T "Why what?"
+    T "{cps=20}Why what?{/cps}"
 
-    N "I might not have been able to stand a life without Ezrea in it,{w=0.5}but he was still there,{w=0.5}you know?"
+    N "{cps=20}I might not have been able to stand a life without Ezrea in it,{w=0.5} but he was still there,{w=0.5} you know?{/cps}"
 
-    N "Even if he wouldn’t have been in my life,{w=0.5}he was still looking at the same sky,{w=0.5}breathing the same air."
+    N "{cps=20}Even if he wouldn’t have been in my life,{w=0.5} he was still looking at the same sky,{w=0.5} breathing the same air.{/cps}"
 
-    N "Why did I give that up?"
+    N "{cps=20}Why did I give that up?{/cps}"
 
-    N "I’m not stupid,{w=0.5}am I?"
+    N "{cps=20}I’m not stupid,{w=0.5}am I?{/cps}"
 
-    T "No,{w=0.5}you’re not."
+    T "{cps=20}No,{w=0.5}you’re not.{/cps}"
 
-    N "{size=-5}I just wanted to show that...{/size}"
+    N "{cps=20}{size=-2}I just wanted to show that{/cps}{cps=2}...{/size}{/cps}"
 
-    N "I just wanted to show Ezra he meant to much to me and that I cared so much about him that I was willing to {sc}{b}die{/b}{/sc} for him."
+    N "{cps=20}I just wanted to show Ezra he meant to much to me{w=0.5} and that I cared so much about him that I was willing to {sc}{b}die{/b}{/sc} for him.{/cps}"
 
-    N "Because in those breaths without him,{w=0.5}it felt like there was no tomorrow.{w=1} It felt like the end."
+    N "{cps=20}Because in those breaths without him,{w=0.5} it felt like there was no tomorrow.{w=1} It felt like the end.{/cps}"
 
-    N "But,{w=0.5}I didn’t get to say goodbye.{w=1} Why did I have to end things like this?"
+    N "{cps=20}But,{w=0.5}I didn’t get to say goodbye.{w=1} Why did I have to end things like this?{/cps}"
 
-    N "And why,{w=0.5}Sap,{w=0.5}was it so lonely? Why,{w=0.5}in my last moments,{w=0.5}did I have to be alone?"
+    N "{cps=20}And why,{w=0.5}Sap,{w=0.5}was it so lonely?{w=1} Why,{w=0.5}in my last moments,{w=0.5}did I have to be alone?{/cps}"
 
-    N "Tell him I’m sorry."
+    N "{cps=20}Tell him I’m sorry.{/cps}"
 
-    N "And to you too,{w=0.5}Sap.{w=1} I’m sorry."
+    N "{cps=20}And to you too,{w=0.5}Sap.{w=1} I’m sorry.{/cps}"
 
     return

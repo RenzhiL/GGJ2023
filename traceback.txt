@@ -1,26 +1,32 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 269, in script
-    N "{cps=20}It’s people like {b}you{/b}{w=} and {b}Ezra{/b} that are the problem.{/cps}{w=1}{nw}"
-ValueError: could not convert string to float: ''
+  File "game/script.rpy", line 332, in script
+    N "{sc=0.25}{size=-1}Weren’t you supposed to make me better?{/size}{sc}{w=2}{nw}"
+Exception: Text ended while the 'sc' text tag was still open.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 269, in script
-    N "{cps=20}It’s people like {b}you{/b}{w=} and {b}Ezra{/b} that are the problem.{/cps}{w=1}{nw}"
+  File "game/script.rpy", line 332, in script
+    N "{sc=0.25}{size=-1}Weren’t you supposed to make me better?{/size}{sc}{w=2}{nw}"
   File "D:\renpy\renpy-8.0.3-sdk\renpy\ast.py", line 921, in execute
     renpy.exports.say(who, what, *args, **kwargs)
   File "D:\renpy\renpy-8.0.3-sdk\renpy\exports.py", line 1373, in say
     who(what, *args, **kwargs)
-  File "D:\renpy\renpy-8.0.3-sdk\renpy\character.py", line 1263, in __call__
-    dtt = DialogueTextTags(what)
-  File "D:\renpy\renpy-8.0.3-sdk\renpy\character.py", line 83, in __init__
-    value = float(value)
-ValueError: could not convert string to float: ''
+  File "D:\renpy\renpy-8.0.3-sdk\renpy\character.py", line 1266, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "D:\renpy\renpy-8.0.3-sdk\renpy\character.py", line 927, in do_display
+    display_say(who,
+  File "D:\renpy\renpy-8.0.3-sdk\renpy\character.py", line 647, in display_say
+    what_text.update()
+  File "D:\renpy\renpy-8.0.3-sdk\renpy\text\text.py", line 1815, in update
+    tokens = self.apply_custom_tags(tokens)
+  File "D:\renpy\renpy-8.0.3-sdk\renpy\text\text.py", line 2359, in apply_custom_tags
+    raise Exception("Text ended while the '{}' text tag was still open.".format(tag))
+Exception: Text ended while the 'sc' text tag was still open.
 
 Windows-10-10.0.22621 AMD64
 Ren'Py 8.0.3.22090809
 Haustorial 1.0
-Sat Feb  4 18:21:31 2023
+Sat Feb  4 19:58:03 2023
