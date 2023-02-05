@@ -4,20 +4,32 @@
 # name of the character.
 
 define N = Character("Noah")
+#image N default = "images\character\"
+
 define T = Character("Sap")
-define yN = Character("young Noah")
+
+define yN = Character("Young Noah")
+
+image bg dark = "images/background/dark.PNG"
+image bg medium = "images/Background/medium.PNG"
+image bg light = "images/Background/light.PNG"
+
+##music
+# audio/Loranthaceae.wav [mandarke]
+# audio/Viscaceae.wav [Quirky]
 
 $ p = 0
 
 # The game starts here.
 
 label start:
+    play music "audio/Viscaceae.wav"
 
     # Show a background. This uses a placeholder by default, but you can
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
 
-    scene bg room
+    scene bg light
 
     # These display lines of dialogue.
 
@@ -130,6 +142,8 @@ label start:
 
     N "I know him probably more than I know myself,{w=0.5} and he,{w=0.5} I."
 
+    stop music fadeout 1.0
+
     N "But something’s wrong,{w=0.5} you know?{w=1} Like he feels {cps=25}so much more absent from my life compared to before.{/cps}"
 
     N "{cps=30}He doesn’t pick up my phone calls all the time anymore.{/cps}"
@@ -164,7 +178,7 @@ label start:
 
 #SCENE 3:
     #CUTSCENE: N " appears, looking  at the ground, visibly upset, edges of the screen are dark, black vines are curled around N "’s arms and legs
-
+    play music "audio/Loranthaceae.wav"
     T "Noah?"
 
     #CUTSCENE: Noah looks up

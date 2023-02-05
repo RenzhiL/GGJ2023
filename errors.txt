@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 553: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
-    "Nothing,{w=0.5}Noah.{w=1} *Nothing.*"
-                                          ^
+File "game/script.rpy", line 26: expected statement.
+    renpy.music.play("audio/Viscaceae.wav", channel=u'music', loop=true)
+                                                                        ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Sat Feb  4 20:23:08 2023
+Sat Feb  4 21:13:21 2023
