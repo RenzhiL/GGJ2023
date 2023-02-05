@@ -290,7 +290,10 @@ screen navigation():
     vbox:
         style_prefix "navigation"
 
-        xpos gui.navigation_xpos
+        if main_menu:
+            xpos 0.5
+            xoffset -400
+            yoffset -150
         yalign 0.5
 
         spacing gui.navigation_spacing
@@ -385,7 +388,7 @@ style main_menu_frame:
     xsize 280
     yfill True
 
-    background "gui/overlay/main_menu.png"
+    #background "gui/overlay/main_menu.png"
 
 style main_menu_vbox:
     xalign 1.0
@@ -1447,7 +1450,7 @@ style nvl_window:
 
 style main_menu_frame:
     variant "small"
-    background "gui/phone/overlay/main_menu.png"
+    #background "gui/phone/overlay/main_menu.png"
 
 style game_menu_outer_frame:
     variant "small"

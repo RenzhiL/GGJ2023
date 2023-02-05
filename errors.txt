@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 26: expected statement.
-    renpy.music.play("audio/Viscaceae.wav", channel=u'music', loop=true)
-                                                                        ^
+File "game/screens.rpy", line 307: 'else' is not a keyword argument or valid child for the vbox statement.
+    else:
+        ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Sat Feb  4 21:13:21 2023
+Sun Feb  5 02:08:11 2023
