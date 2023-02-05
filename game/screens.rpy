@@ -565,7 +565,21 @@ screen about():
             if gui.about:
                 text "[gui.about!t]\n"
 
-            text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
+            text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} {size=-4}[renpy.version_only].\n\n[renpy.license!t]{/size} \n\n")
+
+            text _("Programming:")
+            text _("    Minyoung Heo - GunSlingerKirby#4634")
+            text _("    Renzhi Li - BeEEezZZzZ#6502")
+            text _("Writing:")
+            text _("    mmori — twitter: @nukumorri")
+            text _("Music:")
+            text _("     - ")
+            text _("Art:")
+            text _("    Phyllis Chen - XunQ.#5381")
+            text _("    Rachel Brockman - CirceSays#2275")
+
+            text _("\nCredits to {b}Kinetic Text Tag{/b} by Wattson, see more information {b}{a=https://github.com/SoDaRa/Kinetic-Text-Tags}here{/a}{/b}")
+
 
 
 style about_label is gui_label

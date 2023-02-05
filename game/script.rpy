@@ -29,9 +29,12 @@ image N young = "images/character/nYoung.png"
 image N photo = "images/character/picture.png"
 
 image bg dark = "images/background/dark.PNG"
-image bg medium = "images/Background/medium.PNG"
-image bg light = "images/Background/light.PNG"
-image bg neutral = "images/Background/neutral.PNG"
+image bg medium = "images/background/medium.PNG"
+image bg light = "images/background/light.PNG"
+image bg neutral = "images/background/neutral.PNG"
+image bg bad = "images/background/bad.png"
+image bg meh = "images/background/meh.png"
+image bg good = "images/background/good.png"
 
 transform lowered:
     align (0.5, 0.5)
@@ -230,7 +233,7 @@ label start:
             upbringing and stupid genetics?{/size}{/sc}"""
             N """{cps=25}{sc=0.5}{size=+5}Are you saying that I’m going to end up \n
             like my dirtbag fucking parents?{/size}{/sc}{/cps}"""
-            T "{cps=15}Noah, {w=0.5} you know that’s not that I mean.{/cps}"
+            T "{cps=15}Noah, {w=0.5} you know that’s not what I mean.{/cps}"
             N "{size=+2}You sure?{/size}{w=1} {size=+4}{cps=25}Because it sure as hell sounded like you did.{/cps}{/size}"
             N "Whatever, {w=0.5} I don’t want to talk to you anymore."
             N "{cps=30}I’m going to go talk to Ez, {/cps}{w=0.5} {cps=20}{size=+1}because he always got me a little better than you did.{/size}{/cps}"
@@ -516,7 +519,7 @@ label start:
             T "Everything is going to be alright."
             N " {cps=45}{size=+4}No it’s not! {w=1} I hurt him! {w=1} I WANTED to hurt him!{/size}{/cps}"
             T "Maybe you’re right.{w=1} Maybe Ezra will hate you for the rest of your life."
-            T """The pain you feel might overwhelm you.{w=1} It consumes a part of you.\n
+            T """The pain you feel might overwhelm you.{w=1} It consumes a part of you.
             Perhaps, {w=0.5}Ezra was a part of you that ripped away."""
             N "{cps=2}...{/cps}"
             T "But what’s important to you? {w=1} Is Ezra really THAT important to you?"
@@ -715,7 +718,7 @@ label meh:
 
     menu:
         "Why didn’t you try harder? Why did you give up?":
-            N "{cps=20}Because *nobody* cared.{w=1} I was trying so hard and for *what*?{/cps}{w=2}{nw}"
+            N "{cps=20}Because {i}nobody{/i} cared.{w=1} I was trying so hard and for {i}what{/i}?{/cps}{w=2}{nw}"
             N "{cps=20}Tell me, {w=0.5}Sap.{/cps}{w=2}{nw}"
             N "{cps=20}{i}What did I live for?{/i}{/cps}{w=2}{nw}"
             N "{cps=20}For the sake of surviving?{/cps}{w=2}{nw}"
