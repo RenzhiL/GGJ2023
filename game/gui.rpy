@@ -81,14 +81,6 @@ define gui.notify_text_size = 16
 ## The size of the game's title.
 define gui.title_text_size = 50
 
-## Spacing
-init -2:
-    style nvl_dialogue:
-        line_spacing 10
-    style say_dialogue:
-        line_spacing 10  
-
-
 ## Main and Game Menus #########################################################
 
 ## The images used for the main and game menus.

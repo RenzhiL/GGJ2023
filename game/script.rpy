@@ -169,7 +169,7 @@ label start:
 
     N "Hey."
 
-    "{cps=4}...{/cps}"
+    "{cps=2}...{/cps}"
 
     T "So?"
 
@@ -177,17 +177,17 @@ label start:
 
     T "So,{w=0.5} how are you?"
 
-    "{cps=4}...{/cps}"
+    "{cps=2}...{/cps}"
 
-    N "Never better.{w=1} {cps=20}I mean my best friend is only being an {size=+2}annoying,{w=0.5} stupid{w=0.5} piece of garbage{/size}{/cps}."
+    N "Never better.{w=1} {cps=20}My best friend is only being an {size=+2}annoying,{w=0.5} stupid{w=0.5} piece of garbage{/size}{/cps}."
 
-    N "*sighs angrily*{fast}"
+    N "{sc=0.5}*sighs angrily*{fast}{/sc}"
 
     N "Like,{w=0.5} when I tried to be civil and ask him if something was wrong,{w=0.5} he was like,{w=0.5} \"I’m fine.\""
 
     N "And then next thing you know,{w=0.5} he’s canceling plans last minute.{w=1} Like,{w=0.5} {cps=20}{size=+1}does he not care how I feel?{/size}{/cps}"
 
-    N "{size=+1}If he didn’t give a flying fuck about me,{w=0.5} why should I care about him?{/size}"
+    N "{size=+1}{cps=50}If he didn’t give a flying {b}fuck{/b} about me,{w=0.5} why should I care about him?{/cps}{/size}"
 
     N "{size=+1}{cps=25}Why would I try to be friends with someone who obviously doesn’t care about me?{/cps}{/size}"
 
@@ -197,119 +197,123 @@ label start:
 
     N "{cps=2}...{/cps}"
 
-    N """Ugh,{w=0.5} anyways I kind of lost it and gave him a piece of my mind today,
-    asking him why he wouldn’t just tell me what’s wrong,{w=0.5} and you should have {b}seen{/b} his face."""
+    N "Ugh,{w=0.5} anyways I kind of lost it and gave him a piece of my mind today,{w=0.5}
+    asking him why he wouldn’t just tell me what’s wrong.{w=0.5}"
 
-    N "He looked {b}mad{/b}."
+    N "You should have {b}seen{/b} his face."
 
-    N "What {b}right{/b} does {b}he{/b} have to get upset with {b}me{/b}?"
+    N "{size=+1}He looked {b}mad{/b}.{/size}"
+
+    N "{sc=1}{cps=60}{size=+1}What{w=0.3} right{w=0.3} does{w=0.3} he{w=0.3} have{w=0.3} to get{w=0.3} upset{w=0.3} with{w=0.3} me?{/size}{/cps}{/sc}"
 
     N "And you know what he said?"
 
     N "He said part of it was my fault.{w=1} And when I asked him why,{w=0.5} do you know the nonsense he spewed?"
 
-    N "He said it was because he always put me first,{w=0.5} that in turn he neglected his own needs."
+    N "He said it was because he always put me first,{w=0.5} that he've neglected his own needs."
 
-    N "Sap,{w=0.5} he’s wrong,{w=0.5} right? Isn’t he being kind of unreasonable?"
+    N "Sap,{w=0.5} he’s wrong,{w=0.5} right?{w=1} Isn’t he being kind of unreasonable?"
 
     menu:
-        "Perhaps  little,{w=0.5} but he’s probably hurting,{w=0.5} too.":
-                N "Okay,{w=0.5} but he never {b}tells{/b} me anything.{w=1} He just,{w=0.5} you know{nw}"
+        "Perhaps a little, but he’s probably hurting, too.":
+                N "Okay,{w=0.5} but he never {b}tells{/b} me anything.{w=1} He just,{w=0.5} you know-{w=0.3}{nw}"
                 N "Like,{w=0.5} why didn’t he say something sooner?{w=1} Why did he bottle it up just for it to explode in our faces now?"
-                N "{cps=2}...{/cps}"
+                "{cps=2}...{/cps}"
                 #SCENE: Sad Human
-                N """He’s going through it.{w=1} I {b}know{/b} that.{w=1} But he never talks about it
-                and sometimes I just get so {b}angry{/b} because why can’t he just{nw}"""
-                N "Why can’t he just {b}talk{/b} to me about it? That’s what friend are {b}for{/b},{w=0.5} right?"
-                N "God,{w=0.5}he’s so dumb."
+                N """He’s going through it.{w=0.6} I know that.{w=0.6} But he never talks about it{w=0.3}
+                and sometimes I just get so {b}angry{/b} because why can’t he just{w=0.8}{nw}"""
+                N "Why can’t he just {b}talk{/b} to me about it?{w=1} That’s what friend are {b}for{/b},{w=0.5} right?"
+                N "God,{w=0.5} he’s so dumb."
 
                 menu:
-                    "Well,{w=0.5}maybe try and apologize? Or try to talk to him more? It’s better than doing... nothing,{w=0.5}right?": #(-1)
+                    "Well, maybe try and apologize? Or try to talk to him more? It’s better than doing... nothing, right?": #(-1)
                         N "No.{fast}"
                         T "Noah?"
-                        N "Why should {b}I{/v} be the one apologizing? He’s at fault,{w=0.5}anyways."
-                        T "That wasn’t what I was trying to{nw}"
-                        N "I don’t {sc=1}care{/sc} what he’s going through.{w=1} The hell I’m going through is so much worse."
-                        N "And if he can’t see that,{w=0.5}he doesn’t deserve an apology from me."
+                        N "Why should I be the one apologizing?\n{w=1} {b}He’s{/b} at fault,{w=0.3}anyways."
+                        T "That wasn’t what I was trying to{w=0.4}{nw}"
+                        N "I don’t {sc=1}care{/sc} what he’s going through.{w=1} The {sc=1}hell{/sc} I’m going through is {sc=1}so much worse{/sc}."
+                        N "And if he can’t see that,{w=0.5} he doesn’t deserve an apology from me."
                         #SCENE: Angry Human
-                        N "He doesn’t deserve *anything* from me."
-                        N "I {sc=3}{b}HATE{/b}{/sc} him."
-                        N "{cps=2}...{/cps}"
-                        N "And you know what,{w=0.3}Sap,{w=0.5}I hate everything."
-                        N "{cps=10}Ezra,{w=1} you,{w=1} life.{w=1}{/cps}"
+                        N "{cps=20}{size=+2}He{w=0.3} doesn’t{w=0.3} deserve{w=0.3} {b}anything{/b}{w=0.3} from me.{/size}{/cps}{w=1}{nw}"
+                        N "{size=+4}I{w=0.3} {sc=3}{b}HATE{/b}{/sc}{w=0.3} him.{/size}{w=1}{nw}"
+                        "{cps=2}...{/cps}{w=0.3}{nw}"
+                        N "And you know what,{w=0.3} Sap,{w=0.5} I hate everything.{w=1}{nw}"
+                        N "{size=+2}{cps=10}Ezra,{w=1} you,{w=1} life.{w=1}{/cps}{/size}{nw}"
                         N "I hate it all."
                         #CUTSCENE: Branches crowd screen more, everything darkens abruptly.
 
-                    "Give him space,{w=0.5}Noah.{w=1} You’ve always needed it,{w=0.5}so why not try and understand him and give him the same courtesy?": #(+0)
+                    "Give him space, Noah. You’ve always needed it, so why not try and understand him and give him the same courtesy?": #(+0)
                         N "Ha.{w=1} You’re right."
-                        N "If anything,{w=0.5}he should apologize to me *first.*"
+                        N "If anything,{w=0.5}he should apologize to me {b}first{/b}."
                         N "Why should I go out of my way to help him,{w=0.5}if he’s never done anything for me to begin with."
-                        T "Noah,{w=0.5}you know that’s not{nw}"
-                        N "No,{w=0.5}he’s in the wrong."
-                        N "He’s always been in the wrong."
-                        B "I HATE him."
-                        N "{cps=2}...{/cps}"
-                        N "And you know what,{w=0.5}Sap,{w=0.5}I hate everything."
-                        N "{cps=10}Ezra,{w=1} you,{w=1} life.{w=1}{/cps}"
+                        T "Noah,{w=0.5}you know that’s not{w=0.6}{nw}"
+                        N "No,{w=0.5}he’s in the wrong.{w=1}{nw}"
+                        N "{size=+2}He’s always been in the wrong.{/size}{w=1}{nw}"
+                        N "{size=+4}I{w=0.3} {sc=3}{b}HATE{/b}{/sc}{w=0.3} him.{/size}{w=1}{nw}"
+                        "{cps=2}...{/cps}{w=0.3}{nw}"
+                        N "And you know what,{w=0.3} Sap,{w=0.5} I hate everything.{w=1}{nw}"
+                        N "{size=+2}{cps=10}Ezra,{w=1} you,{w=1} life.{w=1}{/cps}{/size}{nw}"
                         N "I hate it all."
                         #CUTSCENE: Branches crowd screen more, everything darkens abruptly.
 
-        "No, he’s not.{w=1} He’s done so much for you, and yet you didn’t notice anything wrong until now?":
+        "No, he’s not. He’s done so much for you, and yet you didn’t notice anything wrong until now?":
             #CUTSCENE: Edges of screen darken
-            N "Wow,{w=0.5}Sap,{w=0.5}even *you’re* not on my side?"
-            N "God, first I lost my best friend and now I’m going to lose you too?"
-            T "That’s not what I mean{nw}"
-            T "Noah,{w=0.5}you’re making assumptions{nw}"
-            N "No.{w=1} You shut up.{w=1} You don’t {b}get{/b} to talk to me."
-            N "You’re just a figment of {b}my{/b} dream.{w=1} You’re supposed to {b}always{/b} be on {sc=1}{b}MY{/b}{/sc} side."
-            N "It’s people like {b}you{/b} and {b}Ezra{/b} that are the problem"
-            N "{cps=2}...{/cps}"
+            N "Wow,{w=0.5} Sap,{w=0.5} even {b}you’re{/b} not on my side?"
+            N "God,{w=0.5} first I lost my best friend{w=0.5} and now I’m going to lose you too?"
+            menu:
+                "That’s not what I mean.":
+                    N "No.{w=1} You shut up.{w=1} You{w=0.3} don’t{w=0.3} {b}get{/b}{w=0.3} to{w=0.3} talk{w=0.3} to{w=0.3} me.{w=1}{nw}"
+                "Noah, you’re making assumptions":
+                    N "No.{w=1} You shut up.{w=1} You{w=0.3} don’t{w=0.3} {b}get{/b}{w=0.3} to{w=0.3} talk{w=0.3} to{w=0.3} me.{w=1}{nw}"
+            N "{cps=25}You’re just a figment of {b}my{/b} dream.{w=1} You’re supposed to \n{sc=1}{b}always{/b} be on {sc=1}{b}MY{/b}{/sc} side{/sc}.{/cps}"
+            N "{cps=20}It’s people like {b}you{/b} and {b}Ezra{/b} that are the problem.{/cps}{w=1}{nw}"
+            "{cps=2}...{/cps}{w=1}{nw}"
             # SCENE: Confused N "
-            N "Or, {w=0.5}am {b}I{/b} the problem?"
-            T "Noah..."
-            N "I’m the problem."
+            N "{cps=20}{size=-2}Or{/size}, {size=-1}{w=0.5}am {b}I{/b} the problem?{/size}{/cps}"
+            T "{size=-2}{cps=15}Noah...{/cps}{/size}"
+            N "{cps=15}I{w=0.5} {b}am{/b}{w=0.5} the{w=0.5} problem.{/cps}{w=1}{nw}"
 
             menu:
                 "That’s not true": #(+0)
-                    N "Not you being a {b}fucking{/b} liar too."
-                    N "I see it on your stupid,{w=0.5}pitying face.{w=1} You hate me too."
-                    N "But you know what?"
-                    N "I hate you too."
-                    N "I hate everything."
-                    N "Ezra,{w=0.5}you,{w=0.5}life."
+                    N "{size=+2}{cps=20}Not you being a {b}fucking{/b} liar too.{/size}{w=1}{nw}"
+                    N "{size=+2}{cps=20}I see it on your stupid,{w=0.5} pitying face.{w=1} You hate me too.{/size}{w=1.4}{nw}"
+                    N "{size=+2}{cps=20}But you know what?{/size}{w=1.4}{nw}"
+                    N "{size=+2}{cps=20}I hate you too.{/size}{w=1.4}{nw}"
+                    N "And you know what,{w=0.3} Sap,{w=0.5} I hate everything.{w=1}{nw}"
+                    N "{size=+2}{cps=10}Ezra,{w=1} you,{w=1} life.{w=1}{/cps}{/size}{nw}"
                     N "I hate it all."
                     #CUTSCENE: Branches crowd screen more, everything darkens abruptly.
 
-                "Noah, stop.{w=1} You’re jumping to conclusions.": #(-1)
-                    N "No,{w=0.5}I’m not."
-                    N "It’s true,{w=0.5}right?"
-                    N "He’s not going through tough things in life,{w=0.5}he’s going through {b}me{/b}."
-                    N "*I’m* the problem in his life."
-                    T "Noah,{w=0.5}stop–{nw}"
-                    N "I know you’re thinking it."
-                    T "Noah–{nw}"
-                    N "You think I’m better off dead."
-                    N "Of course you do."
+                "Noah, stop. You’re jumping to conclusions.": #(-1)
+                    N "{size=+2}No,{w=0.5} I’m not.{w=2}{nw}{/size}"
+                    N "{cps=20}It’s true,{w=0.5} right?{w=1.4}{nw}{/cps}"
+                    N "{cps=20}He’s not going through tough things in life,{w=1} he’s going through {b}me{/b}.{w=2}{nw}{/cps}"
+                    N "{b}I{/b} am the problem in his life.{w=2}{nw}"
+                    T "Noah,{w=0.5}stop–{w=1}{nw}"
+                    N "I know you’re thinking it.{w=2}{nw}"
+                    T "Noah–{w=0.6}{nw}"
+                    N "You think I’m better off dead.{w=1.4}{nw}"
+                    N "Of course you do.{w=2}{nw}"
                     #SCENE Sad Human
-                    N "Of course you do..."
+                    N "{size=-2}{cps=20}Of course you do{/cps}{cps=2}...{/cps}{/size}"
                     #CUTSCENE: Branches crowd screen more, everything darkens abruptly.
 
 #SCENE 4:
     #SCENE: Noah looks defeated (or just sad)
 
-    N "{cps=2}...{/cps}"
+    "{cps=2}...{/cps}"
 
-    T "Noah?"
+    T "Noah?{w=1.4}{nw}"
 
-    N "{cps=2}...{/cps}"
+    "{cps=2}...{/cps}"
 
-    T "Noah?"
+    T "Noah?{w=1.4}{nw}"
 
-    N "{cps=2}...{/cps}"
+    "{cps=2}...{/cps}"
 
-    T "{cps=5}N–{nw}{/cps}"
+    T "{cps=5}N–{w=1}{nw}{/cps}"
 
-    N "He doesn’t... He wouldn’t..."
+    N "{cps=10}{size=-2}He doesn’t{/cps}{cps=1}...{/cps}{w=1} {cps=10}He wouldn’t{/cps}{cps=1}...{/size}{/cps}{w=2}{nw}"
 
     N "He wouldn’t even talk to me.{w=1} I saw the look on his face... He wouldn’t even look me in the eyes..."
 
@@ -330,16 +334,16 @@ label start:
             N "So tell me,{w=0.5}why the *fuck* are things the way they are?"
             N "Why can’t you do anything right?"
             N "{cps=2}...{/cps}"
-            N "{sc=2} +=5}{cps=20}YOU WERE SUPPOSED TO {b}FIX{/b} ME.{/cps} }{/sc}"
-            N "{sc=2} +=5}{cps=20}THIS IS {b}YOUR{b} FAULT.{/cps} }{/sc}"
+            N "{sc=2}{size=+5}{cps=20}YOU WERE SUPPOSED TO {b}FIX{/b} ME.{/cps} {/size}{/sc}"
+            N "{sc=2}{size=+5}{cps=20}THIS IS {b}YOUR{b} FAULT.{/cps} }{/sc}"
             N "This is {b}all{/b} your fault."
             N "You’re useless.{w=1} You’re worse than useless."
-            N " -=5}{cps=20}If I didn’t listen to you... } }"
-            N "If only I didn’t try like you told me to..."
+            N "{size=-2}{cps=20}If I didn’t listen to you{/cps}{cps=1}...{/cps}{/size}{w=2}{nw}"
+            N "{size=-2}{cps=20}If only I didn’t try like you told me to{/cps}{cps=1}...{/cps}{/size}"
             N "Then none of this would have happened."
             N "I wish I had never met you."
             N "So leave."
-            T "{cps=20}Noah-{nw}{/cps}"
+            T "{cps=20}Noah-{w=1}{nw}{/cps}"
             N "Leave."
             N "Please."
             #SCENE Noah has his back turned to you
@@ -599,7 +603,7 @@ label good:
 
     T "No,{w=0.5}you’re not."
 
-    N " -=5}I just wanted to show that... }"
+    N "{size=-5}I just wanted to show that...{/size}"
 
     N "I just wanted to show Ezra he meant to much to me and that I cared so much about him that I was willing to {sc}{b}die{/b}{/sc} for him."
 
